@@ -9,12 +9,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         // Hello World!
-        Debug.Log("Sup dude?");
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // 60 FPS
     {
-        
+        // transform.Translate(0, 0, 1); <- Un-needed, We got better ways of handling motion.
+        transform.Translate(Vector3.forward); // does the same thing ^.
     }
 }
